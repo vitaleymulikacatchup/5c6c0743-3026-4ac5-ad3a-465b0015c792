@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -13,6 +13,14 @@ import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Award, Building2, Crown, Gem, HelpCircle, Linkedin, Mail, MapPin, MessageCircle, Sparkles, Star, Users } from "lucide-react";
+
+const assetMap = [
+  {
+    id: "placeholder",
+    url: "https://images.pexels.com/photos/7168582/pexels-photo-7168582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Placeholder image"
+  }
+];
 
 export default function Home() {
   return (
@@ -40,7 +48,7 @@ export default function Home() {
 
       <div id="hero" data-section="hero">
         <HeroSplit
-          title="Experience Luxury Hospitality"
+          title="Experience the Best"
           description="Indulge in world-class accommodations with breathtaking views, exceptional service, and unparalleled comfort at Grand Vista Hotel"
           tag="5-Star Experience"
           tagIcon={Star}
